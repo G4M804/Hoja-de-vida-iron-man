@@ -1,0 +1,150 @@
+/* Dando css al texto */
+
+body {
+ background-image: url(../img/fondo2.jpg);
+ background-size: 100%;
+}
+
+h1 {
+	color: red;
+}
+
+article li {
+	color: #00F;
+}
+
+article li strong {
+	color: #000;
+}
+
+
+/* Estilos de la maquetación */
+
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	text-align: center;
+	height: 80px;
+	grid-column: 1 / 11;
+}
+
+aside {
+	float: left;
+	width: 30%;
+	clear: both;
+}
+
+section {
+	float: left;
+	width: 70%;
+}
+
+#formacion{
+	float: left;
+	width: 50%;
+}
+
+#experiencia{
+	float: left;
+	width: 50%;
+}
+
+article li.actual{
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+nav{
+	height: 32px;
+	grid-column: 1 / 11;
+	background-color: #2175bc;
+	z-index: 2;
+    	float: left;
+    	width: 100%;
+    	text-align: center;
+	margin-bottom: 16px;
+}
+nav ul{
+	padding: 0;
+	grid-column: 1 / 11;
+	float: none;
+    	display: inline-block;
+    	margin: 0 auto;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	font-family: Arial;
+	font-size: 11px;
+	text-decoration: none;
+	float: left;
+	padding: 10px;
+	background-color: #2175bc;
+	color: #fff;
+}
+
+nav ul li a:hover{
+	background-color: #2586D7;
+	margin-top: -2px;
+	padding-bottom: 12px;
+}
+
+img {
+	border-radius: 20px;
+	margin: auto;
+	display: block;
+	width: 30%;
+}
+
+footer {
+	background-color: #2175bc;
+	color: white;
+	height: 40px;
+	text-align: center;
+	grid-column: 1 / 11;
+	clear: both;
+}
+
+#datos>h2{
+	text-align: center;
+}
+
+#formacion>h2{
+	text-align: center;
+}
+
+#experiencia>h2{
+	text-align: center;
+}
+
+@media (min-width: 601px) and (max-width: 1000px){
+	body{
+		font-family: arial,sas-serif;
+	}
+	aside{
+		float: left;
+		width: 40%;
+		clear: both;
+	}
+	section {
+		float: left;
+		width: 60%;
+	}
+	#datos{
+		width: 100%;
+	}
+	#formacion{
+		width: 100%;
+	}
+
+	#experiencia{
+		width: 100%
+	}
+}
+ 
